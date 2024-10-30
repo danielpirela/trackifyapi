@@ -1,7 +1,17 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
+    "lib": ["ESNext"],
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    // "bun-types" is the important part
+    "types": ["bun-types"]
+  },
+  "paths": {
+    "@/*": ["src/*"],
+    "@routes/*": ["src/routes/*"],
+    "@services/*": ["src/services/*"],
+    "@types/*": ["src/types/*"],
+    "@utils/*": ["src/utils/*"]
   }
 }
